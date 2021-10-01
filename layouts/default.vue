@@ -4,7 +4,7 @@
       <ul>
         <li>
           <NuxtLink to="/">
-            Home
+            Hommie
           </NuxtLink>
         </li>
         <li>
@@ -15,6 +15,11 @@
         <li>
           <NuxtLink to="/blog">
             Blog
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/home">
+            Home
           </NuxtLink>
         </li>
       </ul>

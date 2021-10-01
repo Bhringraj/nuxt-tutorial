@@ -71,6 +71,23 @@ export default {
     ]
   },
 
+  pwa: {
+    manifest: {
+      name: 'Oluwashina Odumosu: Front-end developer || ',
+      description:
+        'I am a front-end developer with a passion for building user friendly and performant SPAs and JAMstack sites.',
+      nick_name: 'odumz',
+      lang: 'en'
+      // background_color: '#b8c1ec'
+    },
+    icon: {
+      fileName: 'logo.png'
+    },
+    meta: {
+      // theme_color: '#b8c1ec'
+    }
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
@@ -78,6 +95,13 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
+  // Defaults options
+  tailwindcss: {
+    cssPath: '~/assets/css/tailwind.css',
+    configPath: 'tailwind.config.js',
+    exposeConfig: false,
+    config: {}
+  },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -87,7 +111,9 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    'nuxt-animejs',
+    'nuxt-gsap-module'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -103,5 +129,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    transpile: ['gsap']
   }
 }
