@@ -1,6 +1,8 @@
 <template>
   <div>
-    <nav>
+    <outreach-header />
+    <main-header />
+    <!-- <nav>
       <ul>
         <li>
           <NuxtLink to="/">
@@ -23,8 +25,8 @@
           </NuxtLink>
         </li>
       </ul>
-    </nav>
-    <main>
+    </nav> -->
+    <main class="mt-5">
       <!-- <img src="~/assets/logo.svg"> -->
       <Nuxt />
     </main>
