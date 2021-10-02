@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h1
+    <!-- <subscribe /> -->
+    <landing class="mb-5" />
+    <slider />
+    <!-- <h1
       v-anime="{
         translateX: 270,
         direction: 'alternate',
@@ -28,15 +31,15 @@
         }
       }"
       :slides="slides"
-    />
+    /> -->
   </div>
 </template>
 
 <script>
-import carousel from '../components/carousel/carousel.vue'
+// import carousel from '../components/carousel/carousel.vue'
 export default {
   components: {
-    carousel
+    // carousel
   },
   data: () => ({
     slides: [

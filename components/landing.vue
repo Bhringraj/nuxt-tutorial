@@ -1,9 +1,9 @@
 <template>
-  <div class="reveal md:flex justify-center items-center">
+  <div class="reveal md:flex grid justify-items-center items-center">
     <div
-      class="w-3/5 flex-auto p-3 border-2 m-2 reveal fromLeft"
+      class="w-3/5 flex-auto m-2 reveal fromLeft"
     >
-      hi again
+      <post />
     </div>
     <div class="w-2/5 flex-auto p-3 border-2 m-2 reveal fromRight">
       <div ref="about" class="p-3 border-2 m-2 reveal">
